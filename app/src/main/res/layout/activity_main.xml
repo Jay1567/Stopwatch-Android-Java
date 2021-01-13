@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtWatch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="00:00:00"
+        android:text="00:00.00"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +22,7 @@
         android:id="@+id/btnStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="startClock"
         android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnReset"
@@ -35,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
+        android:onClick="resetClock"
         android:text="@string/reset"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnStart"
         app:layout_constraintEnd_toStartOf="@+id/btnStop"
@@ -44,6 +46,7 @@
         android:id="@+id/btnStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="pauseClock"
         android:text="@string/stop"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnReset"
         app:layout_constraintEnd_toEndOf="parent"
